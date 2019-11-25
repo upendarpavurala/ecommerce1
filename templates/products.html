@@ -1,0 +1,150 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>Hello Properties</title>
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+    <style type="text/css">
+        body{
+            background-image: url("{% static 'images/cart.gif' %}");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+    <style>
+table, th, td {
+  border: 2px solid black;
+    color:red;
+}
+</style>
+
+</head>
+
+<body>
+
+	<!-- header -->
+	<div class="header">
+		<div class="main_header">
+			<div class="header_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbart">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+
+					</div>
+
+
+
+
+                    <div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="http://127.0.0.1:8000/home/">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">TRACK <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">ORDER STATUS</a></li>
+										<li><a href="buycomm.html">CANCEL ORDER</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown">
+									   <li><a href="http://localhost:8000/cartapp/cart">click here to cart</a></li>
+                                </li>
+								<li><a href="http://localhost:8000/home/authapp/signup">Sign Up</a></li>
+                                <li><a href="http://localhost:8000/home/authapp/login">Sign In</a></li>
+								</li>
+							</ul>
+						</nav>
+				    </div>
+
+				<form action="/productapp/search">
+                    {% csrf_token %}
+            <select
+                    title="Search in"
+                    name="pcat"
+                >
+
+    <div class="nav-left">
+      <div id="nav-search-dropdown-card">
+
+
+        <option selected="selected" value="search-alias=aps">All Categories</option>
+        <option value="MOBILES">MOBILES</option>
+        <option value="LAPTOPS">LAPTOPS</option>
+        <option value="REFRIGERATORS">REFRIGERATORS</option>
+        <option value="TVS">TVS</option>
+        <option value="BAGS">BAGS</option>
+        <option value="PLASTIC">PLASTIC</option>
+        <option value="SOUND SYSTEM">SOUND SYSTEM</option>
+        <option value="SHIRTS">SHIRTS</option>
+        <option value="AC'S">AC'S</option>
+      </div>
+    </div>
+</select>
+
+                    <input type="text" name="pname" placeholder="enter product name"><br>
+            <input type="submit" value="Search">
+                </form>
+
+
+
+
+
+
+
+
+<table align="center">
+    <tr>
+        <th>pid</th>
+        <th>pcat</th>
+        <th>pname</th>
+        <th>pcost</th>
+        <th>pdsc</th>
+        <th>pmfdt</th>
+        <th>pexpdt</th>
+    </tr>
+    {% for rec in recs %}
+        <tr>
+            <td>{{ rec.pid }}</td>
+            <td>{{ rec.pcat }}</td>
+            <td>{{ rec.pname }}</td>
+            <td>{{ rec.pcost }}</td>
+            <td>{{ rec.pdsc }}</td>
+            <td>{{ rec.pmfdt }}</td>
+            <td>{{ rec.pexpdt }}</td>
+
+
+  <td><a href="/cartapp/addcart?pid={{rec.pid}}">add to cart</a></td>
+
+
+        </tr>
+    {% endfor %}
+ </table>
+
+
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</html

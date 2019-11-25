@@ -1,0 +1,58 @@
+body {
+      position: relative; 
+}
+.nav-tabs li{
+	padding-right:50px;
+}
+#home{
+	 padding-left:15px;
+}
+.tab-content{
+	 margin-left:10px;
+}
+.sub_head{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 0px transparent;
+}
+.middle a{
+	text-decoration:none;
+}
+
+.middle img{
+	width:230px;
+	height:200px;
+}
+
+.middle_des{
+	margin-left:120px;
+}
+
+.middle{
+	margin-left:-60px;
+	margin-top:10px;
+	width:750px;
+	height:350px;
+
+}
+
+.middle p{
+	
+	padding:10px;
+}
+.menu{
+    margin-left: 200px;
+}
+
+ #show{
+   color:#f9ec36;
+     cursor:pointer;    
+  }
+ #hide{
+ color:#f9c402;
+ cursor:pointer;
+   }
+ #report{		 
+  color:#f9870c;
+  cursor:pointer;
+  }

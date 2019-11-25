@@ -1,0 +1,98 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+
+	<title>SIGN UP</title>
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+
+    <style type="text/css">
+        body{
+            background-image: url("{% static 'images/degine.jpg' %}");
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+         <header>
+
+
+
+					<div class="collapse navbar-collapse navbar-right" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="http://127.0.0.1:8000/home/">Home</a></li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">TRACK <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="buyres.html">ORDER STATUS</a></li>
+										<li><a href="buycomm.html">CANCEL ORDER</a></li>
+									</ul>
+								</li>
+
+								<li class="dropdown">
+									   <li><a href="http://localhost:8000/cartapp/cart">click here to cart</a></li>
+                                </li>
+
+
+                            </ul>
+                        </nav>
+                    </div>
+         </header>
+
+
+
+           <h4>Sign Up</h4>
+           <p>Please fill in this form to create an account.</p>
+         <form action="" method="POST">
+             {% csrf_token %}
+             <label for="firstname"><b>First Name</b></label><br>
+             <input type="text" name="firstname" placeholder="enter your first name"><br>
+             <label for="lastname"><b>Last Name</b></label></n><br>
+             <input type="text"  name="lastname"  placeholder="enter your last name"><br>
+             <label for="username"><b>username</b></label></n><br>
+             <input type="text"  name="username"  placeholder="enter your username"><br>
+              <label for="phone_no"><b>MOBILE</b></label></n><br>
+              <input type="text"  name="phone_no"  placeholder="enter your last nam"><br>
+              <label for="email"><b>Email</b></label><br></n>
+              <input type="text" placeholder="Enter Email" name="email" ><br>
+              <label for="password"><b>Password</b></label><br></n>
+              <input type="password" placeholder="Enter Password" name="password" ><br>
+              <label for="rpsw"><b>Repeat Password</b></label><br></n>
+              <input type="password" placeholder="Repeat Password" name="rpsw" ><br>
+              <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+
+         </form>
+
+
+
+
+
+
+
+</body>
+
+</html>

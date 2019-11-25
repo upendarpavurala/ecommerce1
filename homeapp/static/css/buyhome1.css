@@ -1,0 +1,204 @@
+ body{
+	 
+	 background-color:#d9dde2;
+	 
+	 }
+	
+	 .icon{
+	       margin-top:20px;
+	 
+	 }
+	 #sp1{
+	 
+	 font-size:30px;
+	 
+	 }
+	 #sp{
+	      font-size:20px;
+	 }
+	 #p1{
+	      margin-left:174px;
+	 
+	 }
+	 #row2{ margin-top:40px;
+			height:350px;
+	     width:1120px;
+		  background-color:#ffffff;
+	       margin-left:-34px;
+	 }
+	 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+	  
+ }
+ #myCarousel
+ {
+     margin-top:15px;
+ 
+ }
+ #row21{
+    margin-top:15px;
+	margin-left:35px;
+ 
+ 
+ }
+ .row3{
+    margin-top:27px;
+	margin-left:47px;
+    height:350px;
+	width:1120px;
+	background-color:#ffffff;
+	       
+ 
+ }
+ hr{
+  border-top: dotted 2px;
+  color:#d4d8dd;
+ }  
+ #heading2{
+ 
+ font-size:20px;
+ 
+ }
+ .fntcol{
+ 
+ 
+ color:#cdd0d6;
+ 
+ }
+ .row4{
+    margin-top:27px;
+	margin-left:45px;
+    height:600px;
+	width:1120px;
+	background-color:#ffffff;
+	      
+ 
+ }
+ #f1{
+ 
+ margin-left:170px;
+ margin-top:-30px;
+ 
+ }
+#test {
+    width:200px;height:100px;
+	background-color:red;
+}
+#map{
+	margin-top:27px;
+    margin-left:-1px;
+	width:1120px;
+	height:500px; 
+}
+
+.menu{
+    margin-left: 200px;
+}
+
+ body{
+	 
+	 background-color:#d9dde2;
+	 
+	 }
+	 .row1{
+	
+	 background:#ffffff;
+	 height:100px;
+	  width:1120px;
+	  margin-left:34px;
+	  margin-top:-20px;
+	 
+	 }
+	 .icon{
+	       margin-top:20px;
+	 
+	 }
+	 #sp1{
+	 
+	 font-size:30px;
+	 
+	 }
+	 #sp{
+	      font-size:20px;
+	 }
+	 #p1{
+	      margin-left:128px;
+	 
+	 }
+	 #row2{ margin-top:40px;
+			height:350px;
+	     width:1120px;
+		  background-color:#ffffff;
+	       margin-left:-34px;
+	 }
+	 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      height:250px;
+      margin: auto;
+	  
+ }
+ #myCarousel
+ {
+     margin-top:15px;
+ 
+ }
+ #row21{
+    margin-top:15px;
+	margin-left:35px;
+ 
+ 
+ }
+ .row3{
+    margin-top:27px;
+	margin-left:47px;
+    height:350px;
+	width:1120px;
+	background-color:#ffffff;
+	       
+ 
+ }
+ hr{
+  border-top: dotted 2px;
+  color:#d4d8dd;
+ }  
+ #heading2{
+ 
+ font-size:20px;
+ 
+ }
+ .fntcol{
+ 
+ 
+ color:#cdd0d6;
+ 
+ }
+ .row4{
+    margin-top:27px;
+	margin-left:45px;
+    height:600px;
+	width:1120px;
+	background-color:#ffffff;
+	      
+ 
+ }
+ #f1{
+ 
+ margin-left:170px;
+ margin-top:-30px;
+ 
+ }
+#test {
+    width:200px;height:100px;
+	background-color:red;
+}
+#map{
+	margin-top:27px;
+    margin-left:-1px;
+	width:1120px;
+	height:500px; 
+}

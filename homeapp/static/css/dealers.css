@@ -1,0 +1,123 @@
+/*-- body --*/
+
+.dealers_body{
+	background-color:#f2f4f7;
+}
+
+.dealers{
+	border:1px solid grey;	
+	height:250px;
+	cursor:pointer;
+	background-color:white;
+    margin-bottom: 20px;
+}
+
+.dlr_img img{
+	width:100%;
+    height:80px;
+    transition:0.2s ease-in-out;
+}
+
+.dealers:hover .dlr_img img{
+    transition: all 100ms ease-in;
+    transform: scale(1.01);
+}
+
+.dlr_info{
+    margin-left: 5px;
+}
+
+.dlr_name h4{
+	color:black;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.dealers .dlr_prop{
+	bottom:25px;
+    font-size: 13px;
+    position: absolute;
+}
+
+.dealers:hover .dlr_prop{
+	bottom:5px;
+    
+}
+
+.dealers:hover{
+    box-shadow: 0px 5px 10px grey;
+   transition: all 100ms ease-in;
+   transform: scale(1.01);
+}
+
+h3.dealers_heading {
+	color: #282828;
+	font-size: 3em;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align:center;
+}
+
+.dealers hr{
+    height:1px; background: grey; 
+    margin-top: -1px;
+}
+
+.a{
+    height: 50px;
+}
+
+.b{
+    background: #cdced2;
+    position: relative;
+    float: right;
+    height:100px;
+}
+
+.c{
+    background: #7b7b7d;
+    cursor: pointer;
+    overflow: auto;
+    position: absolute;
+    left: o;
+    height:90px;
+}
+
+.d{
+    overflow: auto;
+    position: relative;
+    width: 98%;
+    height:100px;
+}
+.e{
+    list-style: none;
+    position: absolute;
+}
+
+.f{
+    list-style: none;
+}
+
+.f li{
+    width: 200px;
+    list-style: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.f li span{
+    margin-left: 7px;
+}
+
+.f li input[type="checkbox"]{
+    height: 17px;
+    width: 17px;
+    top: -10;
+}
+
+.f li input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
+/*-- //body --*/

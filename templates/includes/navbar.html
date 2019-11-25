@@ -1,0 +1,57 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hello Properties</title>
+	<!-- bootstrap-css -->
+	<link href="{% static 'css/bootstrap.css' %} " rel="stylesheet" type="text/css" media="all" />
+	<!--// bootstrap-css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/jquery-ui.css' %}">
+	<!-- css -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" media="all" />
+	<!--// css -->
+	<!-- font-awesome icons -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' %}">
+	<!-- //font-awesome icons -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all">
+
+</head>
+
+<body>
+	<!-- header -->
+    <div class=""></div>
+				<nav class="navbar-default nav" style="background-color: lightskyblue">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbart">
+							<span class="sr-only">Toggle navigation</span>
+                        </button>
+					</div>
+
+					<div class="collapse navbar-collapse navbar-right navbar-expand-sm" id="navbart">
+						<nav class="nav_starts">
+							<ul class="nav navbar-nav">
+								<li><a href="http://127.0.0.1:8000/">Home</a></li>
+								<li class="dropdown">
+									<a href="#">Cart <b class="caret"></b></a>
+								</li>
+								<li class="dropdown">
+									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Tracking <b class="caret"></b></a>
+									<ul class="dropdown-menu nav_dropdown">
+										<li><a href="rentres.html">Tracking details</a></li>
+										<li><a href="rentcomm.html">cancel</a></li>
+									</ul>
+								</li>
+
+								<li><a href="http://localhost:8000/authapp/signup/">sign up</a></li>
+                                <li><a href="./login/">Log In</a></li>
+
+							</ul>
+						</nav>
+                    </div>
+                </nav>
+	<!--//header-->
+</body>
+</html>
